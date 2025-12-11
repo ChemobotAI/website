@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.05 65.05">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #0761e6;
+        stroke-width: 7px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: .73px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-3 {
+        stroke-width: .98px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <circle class="cls-1" cx="32.52" cy="32.52" r="29.02"/>
+      <path class="cls-2" d="M48.01,30.56c-.55-.67-.97-1.22-1.19-1.55-.03-.03-.06-.09-.06-.12v-8.06h-7.18v8.06s0,.06-.03.12l-1.89,2.8c-.21.3-.52.7-.91,1.19-1.31,1.7-3.38,4.38-3.38,5.96,0,.7.49,1.16,1.76,1.16h16.09c1.19,0,1.67-.49,1.67-1.22,0-2.04-3.07-5.96-4.9-8.33h0Z"/>
+      <rect class="cls-2" x="37.97" y="18.59" width="10.46" height="2.24" rx="1.12" ry="1.12"/>
+      <line class="cls-2" x1="46.99" y1="25.89" x2="39.34" y2="25.89"/>
+      <circle class="cls-2" cx="43.39" cy="30.58" r="1.06"/>
+      <circle class="cls-2" cx="45.04" cy="36.07" r="1"/>
+      <g>
+        <path class="cls-2" d="M42.56,40.41c0,1.9-1.54,3.44-3.44,3.44h-19.52c-1.9,0-3.44-1.54-3.44-3.44v-11.61c0-1.9,1.54-3.44,3.44-3.44h19.52"/>
+        <ellipse class="cls-2" cx="23.99" cy="32.16" rx="1.45" ry="5"/>
+        <ellipse class="cls-2" cx="23.99" cy="32.16" rx="5" ry="1.45" transform="translate(-12.87 16.3) rotate(-30)"/>
+        <ellipse class="cls-2" cx="23.99" cy="32.16" rx="1.45" ry="5" transform="translate(-15.86 36.86) rotate(-60)"/>
+        <line class="cls-2" x1="31.48" y1="29.53" x2="39.27" y2="29.53"/>
+        <line class="cls-2" x1="31.54" y1="32.21" x2="37.62" y2="32.21"/>
+        <line class="cls-2" x1="31.57" y1="34.9" x2="35.37" y2="34.9"/>
+        <line class="cls-2" x1="16.42" y1="38.93" x2="33.38" y2="38.93"/>
+        <circle class="cls-3" cx="29.52" cy="41.34" r=".47"/>
+        <path class="cls-2" d="M23.22,46.84h12.09c1.03,0,1.86.83,1.86,1.86h-15.82c0-1.03.83-1.86,1.86-1.86Z"/>
+        <line class="cls-2" x1="24.67" y1="46.96" x2="25.78" y2="43.7"/>
+        <line class="cls-2" x1="33.94" y1="46.96" x2="32.76" y2="43.7"/>
+      </g>
+    </g>
+  </g>
+</svg>

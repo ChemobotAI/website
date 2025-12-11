@@ -1,0 +1,60 @@
+@media (max-width: 960px) {
+
+    .wrapper{width:90%;}
+    .credential-icons{ 
+    text-align: center;}
+    
+    .credential-icons li{width:20%; margin:0 2%}
+   
+    .intro p{font-size:30px;line-height:140%;}
+    .intro{text-align: left;}
+    .intro button{margin-top: 20px;}
+}
+/* ----------------------------------------*/
+
+@media (max-width: 760px) {
+    
+    .credential-icons li{
+    width:100%; 
+    flex-direction: row;
+    text-align: left;align-items: center;margin-bottom: 20px;}
+    
+    .credential-icons li img {width:100px; height:100px;margin-right: 20px;}
+    
+    .bio{width:80%;margin: 0 10%;}
+    .bio-img{width:70%;}
+    .bio-right{border-top:1px solid #e6e7e8;margin-top:40px;padding-top:40px;}
+    .wrapper.wrapper-split {background: none;}
+    
+    .hero h1{width:50%;font-size:24px;}
+    .hero-image{width:40%;}
+    .clients li{width:28%;}
+    .clients li img{width:100%;}
+    .clients{justify-content: space-between;}
+}
+
+/* ----------------------------------------*/
+
+@media (max-width: 620px) {
+ 
+    .project img{width:100%;margin-bottom:30px;}
+    .project .project-text{width:100%;padding-left:0px;} 
+    
+    .quote{width:90%; font-size:30px;}
+  
+    .bio{width:100%;margin: 0;}
+    
+    .hero h1{width:100%;font-size:34px;}
+    .hero-image{width:100%;margin-top:40px;}
+   
+}
+
+/* ----------------------------------------*/
+
+@media (max-width: 520px) {
+ 
+
+    .logo {float:left;width:100%;margin-top:30px;}
+    header{margin-bottom: 80px;}
+    .credential-icons li{align-items:flex-start;}
+}
