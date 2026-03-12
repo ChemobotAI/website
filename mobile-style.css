@@ -31,6 +31,12 @@
     .clients li{width:28%;}
     .clients li img{width:100%;}
     .clients{justify-content: space-between;}
+
+    .main-nav {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 14px;
+    }
 }
 
 /* ----------------------------------------*/
@@ -46,6 +52,10 @@
     
     .hero h1{width:100%;font-size:34px;}
     .hero-image{width:100%;margin-top:40px;}
+
+    .testimonial p {
+        font-size: 1.1rem;
+    }
    
 }
 

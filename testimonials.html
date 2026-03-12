@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ChemoBotAI | Testimonials</title>
+        <link rel="stylesheet" href="chemobotAI-style.css" />
+        <link rel="stylesheet" href="mobile-style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+    </head>
+
+<body>
+
+    <section class="blue-pattern">
+        <div class="wrapper">
+
+            <header>
+                <a class="brand" href="index.html"><img class="logo" src="images/ChemoBot-logo.svg" alt="ChemoBotAI logo" /></a>
+                <a class="contact" href="mailto:chemobotai@gmail.com">Get In touch</a>
+                <nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a class="active" href="testimonials.html">Testimonials</a>
+                </nav>
+            </header>
+
+            <div class="hero">
+                <h1>
+                    <span>Client Feedback</span>
+                    <br /> What partners say about our approach
+                </h1>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="grey">
+        <div class="wrapper">
+            <h3>Testimonials</h3>
+
+            <div class="testimonial">
+                <p>“The team translated our lab priorities into a practical automation roadmap, keeping the science and engineering in sync with our execution timeline.”</p>
+                <p class="source">– Entalpic, Co-founding Team</p>
+            </div>
+
+            <div class="testimonial">
+                <p>“They helped us move from a general concept to a concrete throughput plan with clear milestones and measurable targets.”</p>
+                <p class="source">– Altrove, Product Lead</p>
+            </div>
+
+            <div class="testimonial">
+                <p>“ChemoBotAI’s blend of chemistry depth and automation pragmatism is rare. We found them direct, fast, and highly implementable.”</p>
+                <p class="source">– Chemify, Strategy Partner</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="white">
+        <div class="wrapper">
+            <h3>Share a testimonial</h3>
+            <p>If you have worked with us and would like to add your experience, we can post a short quote or case story.</p>
+            <a class="btn" href="mailto:chemobotai@gmail.com">Email us</a>
+        </div>
+    </section>
+
+
+    <section class="black">
+        <div class="wrapper footer">
+            <h3>Contact</h3>
+            <p>Get in touch to discuss your requirements.</p>
+            <p> // <a href="mailto:chemobotai@gmail.com">chemobotai@gmail.com</a></p>
+            <p class="copyright"> © CHEMOBOTAI 2025</p>
+            <button id="backToTop" title="Back to Top">↑</button>
+
+        </div>
+    </section>
+
+
+<script>
+  const backToTop = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>

@@ -42,6 +42,7 @@ a {
   text-decoration: none;
 }
 
+.btn,
 button {
     border: none;
     background: url('images/right-arrow.svg') right 16px center no-repeat #2b2b2d;
@@ -56,10 +57,18 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
-    }
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform:uppercase;
+    letter-spacing: 0.03em;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+}
 
-button a{color:#fff;}
+a.btn{color:#fff;}
 
+.btn:hover,
 button:hover{background: #555;}
 
 
@@ -86,7 +95,7 @@ a.contact {
 
 a.contact:hover{color: #fff;
     border-bottom:2px solid #fff;}
-.logo {float:right;width:200px;}
+.logo {width:200px;}
 
 /* ----------------------------------------*/
 
@@ -189,9 +198,33 @@ a.contact:hover{color: #fff;
     border-bottom:1px solid #d0d2d3;
     padding:10px 0;margin:30px 0;}
 
+.btn-light {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-light:hover {
+    background-color:#fff;
+    color:#2a84ff;
+}
+
+header {
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand {
+    margin-right: auto;
+}
+
 /* ----------------------------------------*/
 
 .quote{width:80%;margin: auto;font-size:30px;}
+
+.blue-pattern .quote{color:#fff;}
 
 .quote span{
     margin-top:20px;
@@ -238,3 +271,45 @@ a.contact:hover{color: #fff;
 #backToTop:hover {
   background-color: #555;}
 
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.main-nav a {
+    color: #2b2b2d;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a.active{
+    border-bottom-color: #2b2b2d;
+}
+
+.blue-pattern .main-nav a,
+.blue-pattern a.contact{
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 22px;
+}
+
+.testimonial p {
+    margin-bottom: 14px;
+    font-size: 1.3rem;
+}
+
+.testimonial .source {
+    color:#2a84ff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 14px;
+}

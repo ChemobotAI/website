@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChemoBotAI | Altrove Case Study</title>
+    <link rel="stylesheet" href="../chemobotAI-style.css" />
+    <link rel="stylesheet" href="../mobile-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="blue-pattern">
+      <div class="wrapper">
+        <header>
+          <a class="brand" href="../index.html"><img class="logo" src="../images/ChemoBot-logo.svg" alt="ChemoBotAI logo" /></a>
+          <a class="contact" href="mailto:chemobotai@gmail.com">Get In touch</a>
+          <nav class="main-nav">
+            <a href="../index.html">Home</a>
+            <a class="active" href="../projects.html">Projects</a>
+            <a href="../testimonials.html">Testimonials</a>
+          </nav>
+        </header>
+        <div class="hero">
+          <h1>
+            <span>Case Study</span><br />Altrove
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="white">
+      <div class="wrapper">
+        <div class="project clearfix">
+          <img src="../images/project-altrove.jpg" alt="Altrove project image" />
+          <div class="project-text">
+            <h2>Throughput and operational review</h2>
+            <p>For Altrove, we performed a rapid operational assessment focused on throughput loss points and automation opportunities with direct impact on experimental scheduling and turnaround.</p>
+            <p>We provided an action-oriented roadmap with short- and long-term improvements to match available team capacity and available chemistry constraints.</p>
+            <p class="project-detail"><span class="highlight">//</span> Initial recommendations delivered in under 2 months</p>
+            <a class="btn" href="./chemify.html">Next: Chemify</a>
+            <a class="btn" href="../projects.html">Back to projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="black">
+      <div class="wrapper footer">
+        <h3>Contact</h3>
+        <p>Get in touch to discuss your requirements.</p>
+        <p> // <a href="mailto:chemobotai@gmail.com">chemobotai@gmail.com</a></p>
+        <p class="copyright"> © CHEMOBOTAI 2025</p>
+        <button id="backToTop" title="Back to Top">↑</button>
+      </div>
+    </section>
+
+    <script>
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          backToTop.classList.add('show');
+        } else {
+          backToTop.classList.remove('show');
+        }
+      });
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+  </body>
+</html>
