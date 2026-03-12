@@ -28,15 +28,7 @@
 <section class="blue-pattern">  
      <div class="wrapper">
          
-        <header> 
-            <a class="brand" href="index.html"><img class="logo" src="images/ChemoBot-logo.svg" alt="ChemoBotAI logo" /></a>
-            <a class="contact" href="mailto:chemobotai@gmail.com">Get In touch</a>
-            <nav class="main-nav">
-                <a class="active" href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="testimonials.html">Testimonials</a>
-            </nav>
-         </header><!-- end header -->
+        <div id="site-header"></div>
         
         <div class="hero"> 
             <h1>
@@ -64,33 +56,22 @@
             <p>Together, we consult for businesses in the ChemAI space on lab automation, robotics, and AI strategy – working with world-class companies including Chemify ($50M Series B), Altrove ($10M Seed), and Entalpic (€8.5M Seed).</p>
                  
             <!-- <button>More info</button> -->
-        </div> <!-- end intro -->      
-         
-    </div> <!-- end wrapper -->
-    </section> <!--end section--> 
-    
-    
-    
-<!------------------------------------------------------------
-------------------------------------------------------------->
+        </div> <!-- end intro -->
 
-    
-    
-       
-    <section class="white">  
+    </div> <!-- end wrapper -->
+    </section> <!--end section-->
+
+
+    <section class="white">
      <div class="wrapper">
          <h3>Recent Clients</h3>
          <ul class="clients">
             <li><img src="images/chemify-logo@2x.png" alt="Chemify Logo"/></li>
              <li><img src="images/altrove-logo@2x.png" alt="Altrove logo"/></li>
             <li><img src="images/entalpic-logo@2x.png" alt="Entalpic logo"/></li>
-                         
-                         
-         </ul><!--end clients ul--> 
-         
-         
+         </ul><!--end clients ul-->
        </div> <!-- end wrapper -->
-    </section> <!--end section--> 
+    </section> <!--end section-->
      
     
     
@@ -179,11 +160,55 @@
 
     
     
-    <section class="white">  
+    <section class="grey">
      <div class="wrapper">
          <h3>Selected Projects</h3>
-         <p>We partner with teams building the future of chemistry automation and AI, typically through focused audits, strategic design and execution support.</p>
-         <a class="btn" href="projects.html">Browse projects</a>
+ 
+         <div class="project-preview-grid">
+            <article class="project-preview">
+                <a class="project-preview-link" href="projects/entalpic.html">
+                    <div class="project-preview-image">
+                        <img src="images/project-entalpic.jpg" alt="Entalpic project visual">
+                    </div>
+                    <div class="project-preview-body">
+                         <h2>Entalpic</h2>
+                         <p>Designed an automation strategy and execution roadmap to scale AI-driven chemistry workflows and reduce time-to-run for high-value experiments.</p>
+                         <span class="btn project-view-btn">View project</span>
+                     </div>
+                     <div class="project-preview-detail"><span class="highlight">//</span> Entalpic raised a &euro;8.5M seed round</div>
+                 </a>
+             </article>
+
+            <article class="project-preview">
+                <a class="project-preview-link" href="projects/altrove.html">
+                    <div class="project-preview-image">
+                        <img src="images/project-altrove.jpg" alt="Altrove project visual">
+                    </div>
+                    <div class="project-preview-body">
+                         <h2>Altrove</h2>
+                         <p>Built practical recommendations for lab throughput and operational consistency while preserving the scientific rigor required for scale-up and reproducibility.</p>
+                         <span class="btn project-view-btn">View project</span>
+                     </div>
+                     <div class="project-preview-detail"><span class="highlight">//</span> Altrove raised a $10M seed round</div>
+                 </a>
+             </article>
+
+            <article class="project-preview">
+                <a class="project-preview-link" href="projects/chemify.html">
+                    <div class="project-preview-image">
+                        <img src="images/jonathan-daniel.jpg" alt="Chemify project visual">
+                    </div>
+                    <div class="project-preview-body">
+                         <h2>Chemify</h2>
+                         <p>Provided strategic advisory on automation architecture, robotics integration, and planning support for next-generation autonomous chemistry operations.</p>
+                         <span class="btn project-view-btn">View project</span>
+                     </div>
+                     <div class="project-preview-detail"><span class="highlight">//</span> Chemify raised a $50M Series B</div>
+                 </a>
+             </article>
+         </div>
+
+         <a class="btn project-browse-btn" href="projects.html">Browse all projects</a>
 
      </div> <!-- end wrapper -->
     </section> <!--end section--> 
@@ -197,10 +222,13 @@
     
     <section class="blue-pattern">  
      <div class="wrapper">
-        <p class="quote">“Their clear and practical automation strategy helped us move from experiments-by-guesswork to a reproducible, scalable flow.”</p>
-        <a class="btn btn-light" href="testimonials.html">Read testimonials</a>
-    
-    </div> <!-- end wrapper -->
+        
+         <p class="quote">“The team translated our lab priorities into a practical automation roadmap, keeping execution and chemistry in sync.”  
+        <span>– Entalpic, Co-founding Team</span></p>
+
+         <a class="btn btn-centered" href="testimonials.html">Read all testimonials</a>
+
+     </div> <!-- end wrapper -->
     </section> <!--end section--> 
     
     
@@ -208,18 +236,7 @@
 <!------------------------------------------------------------
 ------------------------------------------------------------->
     
-    <section class="black">  
-     <div class="wrapper footer">   
-         <h3>Contact</h3>
-         <p>Get in touch to discuss your requirements.</p>
-         <p> // <a href="mailto:chemobotai@gmail.com">chemobotai@gmail.com</a></p>
-         <p class="copyright"> © CHEMOBOTAI 2025</p>
-         
-        <button id="backToTop" title="Back to Top">↑</button>
-
-
-    </div> <!-- end wrapper -->
-    </section> <!--end section--> 
+    <div id="site-footer"></div>
     
     
     
@@ -228,22 +245,12 @@
 ------------------------------------------------------------->
 
             
+<script src="components.js"></script>
 <script>
-  // Back to top button shared across pages
-  const backToTop = document.getElementById('backToTop');
+  document.getElementById('site-header').innerHTML = renderHeader('home', '');
+  document.getElementById('site-footer').innerHTML = renderFooter();
+  initBackToTop();
+</script>
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTop.classList.add('show');
-    } else {
-      backToTop.classList.remove('show');
-    }
-  });
-
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>        
-       
     </body> 
 </html>

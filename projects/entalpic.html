@@ -13,15 +13,7 @@
   <body>
     <section class="blue-pattern">
       <div class="wrapper">
-        <header>
-          <a class="brand" href="../index.html"><img class="logo" src="../images/ChemoBot-logo.svg" alt="ChemoBotAI logo" /></a>
-          <a class="contact" href="mailto:chemobotai@gmail.com">Get In touch</a>
-          <nav class="main-nav">
-            <a href="../index.html">Home</a>
-            <a class="active" href="../projects.html">Projects</a>
-            <a href="../testimonials.html">Testimonials</a>
-          </nav>
-        </header>
+        <div id="site-header"></div>
         <div class="hero">
           <h1>
             <span>Case Study</span><br />Entalpic
@@ -39,35 +31,19 @@
             <p>We worked with Entalpic before they launched to translate their chemistry roadmap into an executable automation plan, defining platform boundaries and growth stages across the first two years.</p>
             <p>The engagement covered architecture options, process planning, and reporting workflows tailored to a fast-moving startup team.</p>
             <p class="project-detail"><span class="highlight">//</span> Ongoing weekly advisory since 2024</p>
-            <a class="btn" href="./altrove.html">Next: Altrove</a>
             <a class="btn" href="../projects.html">Back to projects</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="black">
-      <div class="wrapper footer">
-        <h3>Contact</h3>
-        <p>Get in touch to discuss your requirements.</p>
-        <p> // <a href="mailto:chemobotai@gmail.com">chemobotai@gmail.com</a></p>
-        <p class="copyright"> © CHEMOBOTAI 2025</p>
-        <button id="backToTop" title="Back to Top">↑</button>
-      </div>
-    </section>
+    <div id="site-footer"></div>
 
+    <script src="../components.js"></script>
     <script>
-      const backToTop = document.getElementById('backToTop');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-          backToTop.classList.add('show');
-        } else {
-          backToTop.classList.remove('show');
-        }
-      });
-      backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
+      document.getElementById('site-header').innerHTML = renderHeader('projects', '../');
+      document.getElementById('site-footer').innerHTML = renderFooter();
+      initBackToTop();
     </script>
   </body>
 </html>

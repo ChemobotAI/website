@@ -19,15 +19,7 @@
     <section class="blue-pattern">
         <div class="wrapper">
 
-            <header>
-                <a class="brand" href="index.html"><img class="logo" src="images/ChemoBot-logo.svg" alt="ChemoBotAI logo" /></a>
-                <a class="contact" href="mailto:chemobotai@gmail.com">Get In touch</a>
-                <nav class="main-nav">
-                    <a href="index.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a class="active" href="testimonials.html">Testimonials</a>
-                </nav>
-            </header>
+            <div id="site-header"></div>
 
             <div class="hero">
                 <h1>
@@ -40,63 +32,60 @@
     </section>
 
 
-    <section class="grey">
-        <div class="wrapper">
-            <h3>Testimonials</h3>
+    <div class="testimonial-list">
 
-            <div class="testimonial">
-                <p>“The team translated our lab priorities into a practical automation roadmap, keeping the science and engineering in sync with our execution timeline.”</p>
-                <p class="source">– Entalpic, Co-founding Team</p>
-            </div>
-
-            <div class="testimonial">
-                <p>“They helped us move from a general concept to a concrete throughput plan with clear milestones and measurable targets.”</p>
-                <p class="source">– Altrove, Product Lead</p>
-            </div>
-
-            <div class="testimonial">
-                <p>“ChemoBotAI’s blend of chemistry depth and automation pragmatism is rare. We found them direct, fast, and highly implementable.”</p>
-                <p class="source">– Chemify, Strategy Partner</p>
+        <div class="testimonial">
+            <div class="wrapper-testimonial">
+                <div class="testimonial-type">// Ongoing consulting</div>
+                <div class="testimonial-content">
+                    <img src="images/project-entalpic.jpg" alt="Entalpic team" class="testimonial-photo" />
+                    <div class="testimonial-body">
+                        <div class="testimonial-text">"The team translated our lab priorities into a practical automation roadmap, keeping the science and engineering in sync with our execution timeline."</div>
+                        <div class="author-name">Entalpic</div>
+                        <div class="author-role">Co-founding Team</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
 
-
-    <section class="white">
-        <div class="wrapper">
-            <h3>Share a testimonial</h3>
-            <p>If you have worked with us and would like to add your experience, we can post a short quote or case story.</p>
-            <a class="btn" href="mailto:chemobotai@gmail.com">Email us</a>
+        <div class="testimonial">
+            <div class="wrapper-testimonial">
+                <div class="testimonial-type">// Throughput audit</div>
+                <div class="testimonial-content">
+                    <img src="images/project-altrove.jpg" alt="Altrove team" class="testimonial-photo" />
+                    <div class="testimonial-body">
+                        <div class="testimonial-text">"They helped us move from a general concept to a concrete throughput plan with clear milestones and measurable targets."</div>
+                        <div class="author-name">Altrove</div>
+                        <div class="author-role">Product Lead</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
 
-
-    <section class="black">
-        <div class="wrapper footer">
-            <h3>Contact</h3>
-            <p>Get in touch to discuss your requirements.</p>
-            <p> // <a href="mailto:chemobotai@gmail.com">chemobotai@gmail.com</a></p>
-            <p class="copyright"> © CHEMOBOTAI 2025</p>
-            <button id="backToTop" title="Back to Top">↑</button>
-
+        <div class="testimonial">
+            <div class="wrapper-testimonial">
+                <div class="testimonial-type">// Strategic advisory</div>
+                <div class="testimonial-content">
+                    <img src="images/jonathan-daniel.jpg" alt="Chemify team" class="testimonial-photo" />
+                    <div class="testimonial-body">
+                        <div class="testimonial-text">"ChemoBotAI's blend of chemistry depth and automation pragmatism is rare. We found them direct, fast, and highly implementable."</div>
+                        <div class="author-name">Chemify</div>
+                        <div class="author-role">Strategy Partner</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+
+    </div>
 
 
+    <div id="site-footer"></div>
+
+<script src="components.js"></script>
 <script>
-  const backToTop = document.getElementById('backToTop');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTop.classList.add('show');
-    } else {
-      backToTop.classList.remove('show');
-    }
-  });
-
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  document.getElementById('site-header').innerHTML = renderHeader('testimonials', '');
+  document.getElementById('site-footer').innerHTML = renderFooter();
+  initBackToTop();
 </script>
 
 </body>
