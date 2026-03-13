@@ -313,6 +313,7 @@ header {
 
 .testimonial {
     padding: 50px 0;
+    overflow: hidden;
 }
 
 .testimonial:nth-child(2n) {
@@ -322,6 +323,13 @@ header {
 .wrapper-testimonial {
     width: 80%;
     margin: 0 auto;
+    position: relative;
+    padding-right: 100px;
+}
+
+.testimonial:nth-child(2n) .wrapper-testimonial {
+    padding-left: 100px;
+    padding-right: 0;
 }
 
 .testimonial-type {
@@ -339,7 +347,26 @@ header {
 }
 
 .testimonial:nth-child(2n) .testimonial-content {
-    flex-direction: row-reverse;
+    flex-direction: row;
+}
+
+.wrapper-testimonial::before {
+    content: "\201D";
+    font-family: Georgia, serif;
+    font-size: 160px;
+    font-weight: bold;
+    line-height: 1;
+    color: #e6e7e8;
+    position: absolute;
+    right: -10px;
+    top: 20px;
+}
+
+.testimonial:nth-child(2n) .wrapper-testimonial::before {
+    content: "\201C";
+    color: #ffffff;
+    right: auto;
+    left: -10px;
 }
 
 .testimonial-photo {
@@ -357,14 +384,14 @@ header {
 }
 
 .author-name {
-    font-weight: 500;
+    color: #2a84ff;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 14px;
 }
 
 .author-role {
-    color: #2a84ff;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 13px;
