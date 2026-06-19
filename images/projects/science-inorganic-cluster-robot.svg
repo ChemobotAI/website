@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 750" role="img" aria-labelledby="title desc">
+  <title id="title">Inorganic cluster discovery robot concept</title>
+  <desc id="desc">A concept graphic showing a modular robot searching a reaction space and producing polyoxometalate clusters.</desc>
+  <rect width="1500" height="750" fill="#f5f7f8"/>
+  <rect x="105" y="105" width="1290" height="540" rx="8" fill="#fff"/>
+  <g stroke="#2b2b2d" stroke-width="10" fill="none" stroke-linejoin="round">
+    <rect x="185" y="210" width="270" height="270" rx="18"/>
+    <path d="M220 250 h200 M220 310 h200 M220 370 h200 M220 430 h200"/>
+    <path d="M520 345 h180"/>
+    <path d="M665 310 l45 35 l-45 35"/>
+    <rect x="760" y="210" width="300" height="270" rx="18"/>
+    <path d="M810 420 C850 310, 970 310, 1010 420"/>
+    <path d="M860 390 h100"/>
+  </g>
+  <g fill="#2a84ff">
+    <circle cx="830" cy="265" r="14"/>
+    <circle cx="890" cy="265" r="14"/>
+    <circle cx="950" cy="265" r="14"/>
+    <circle cx="1010" cy="265" r="14"/>
+  </g>
+  <g stroke="#2b2b2d" stroke-width="8" fill="#fff">
+    <circle cx="1190" cy="280" r="42"/>
+    <circle cx="1265" cy="325" r="42"/>
+    <circle cx="1190" cy="370" r="42"/>
+    <circle cx="1115" cy="325" r="42"/>
+    <path d="M1150 305 l80 45 M1230 305 l-80 45 M1190 322 h75 M1190 322 h-75"/>
+  </g>
+  <circle cx="1190" cy="325" r="22" fill="#2a84ff"/>
+  <text x="750" y="590" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="42" fill="#2b2b2d">Modular platform for inorganic discovery</text>
+  <text x="750" y="645" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="22" fill="#2a84ff">ACS Central Science</text>
+</svg>

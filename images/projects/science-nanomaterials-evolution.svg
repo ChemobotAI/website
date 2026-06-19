@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 750" role="img" aria-labelledby="title desc">
+  <title id="title">Autonomous nanomaterials evolution robot concept</title>
+  <desc id="desc">A concept graphic showing a robotic platform, spectral feedback, and nanoparticle evolution through algorithmic selection.</desc>
+  <rect width="1500" height="750" fill="#f5f7f8"/>
+  <rect x="100" y="95" width="1300" height="560" rx="8" fill="#fff"/>
+  <g stroke="#2b2b2d" stroke-width="10" fill="none" stroke-linejoin="round">
+    <rect x="175" y="245" width="310" height="230" rx="16"/>
+    <path d="M215 435 h230"/>
+    <path d="M250 435 v-135 h70 v135"/>
+    <path d="M345 435 v-95 h70 v95"/>
+    <path d="M260 300 h50 M355 340 h50"/>
+    <path d="M485 360 h160"/>
+    <path d="M610 325 l45 35 l-45 35"/>
+    <path d="M855 360 h160"/>
+    <path d="M980 325 l45 35 l-45 35"/>
+  </g>
+  <g fill="#2a84ff">
+    <circle cx="705" cy="275" r="34"/>
+    <circle cx="745" cy="335" r="22"/>
+    <circle cx="680" cy="380" r="28"/>
+    <circle cx="775" cy="430" r="18"/>
+  </g>
+  <g stroke="#2b2b2d" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M1105 430 c70 -155 150 -155 220 0"/>
+    <path d="M1105 430 h235"/>
+    <path d="M1120 385 c45 35 78 32 112 -15 s78 -55 104 -5"/>
+  </g>
+  <g fill="#2b2b2d">
+    <polygon points="1140,300 1195,330 1140,360"/>
+    <rect x="1210" y="294" width="94" height="72" rx="8"/>
+    <polygon points="1270,250 1335,285 1270,320"/>
+  </g>
+  <text x="750" y="590" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="42" fill="#2b2b2d">Autonomous materials evolution</text>
+  <text x="750" y="645" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="22" fill="#2a84ff">Nature Communications</text>
+</svg>

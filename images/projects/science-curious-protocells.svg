@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 750" role="img" aria-labelledby="title desc">
+  <title id="title">Curiosity-driven protocell discovery concept</title>
+  <desc id="desc">A concept graphic showing a curiosity algorithm exploring protocell droplet behaviours in chemical space.</desc>
+  <rect width="1500" height="750" fill="#f5f7f8"/>
+  <rect x="100" y="95" width="1300" height="560" rx="8" fill="#fff"/>
+  <g stroke="#2b2b2d" stroke-width="10" fill="none">
+    <rect x="210" y="215" width="350" height="260" rx="18"/>
+    <path d="M250 425 c55 -120 105 -25 160 -125 s95 80 120 -35"/>
+    <path d="M625 345 h190"/>
+    <path d="M780 310 l45 35 l-45 35"/>
+  </g>
+  <g fill="#2a84ff">
+    <circle cx="285" cy="285" r="18"/>
+    <circle cx="345" cy="350" r="28"/>
+    <circle cx="455" cy="300" r="22"/>
+    <circle cx="495" cy="405" r="15"/>
+  </g>
+  <g fill="none" stroke="#2b2b2d" stroke-width="8">
+    <circle cx="930" cy="280" r="48"/>
+    <circle cx="1045" cy="365" r="72"/>
+    <circle cx="1190" cy="285" r="34"/>
+    <circle cx="1175" cy="440" r="54"/>
+    <path d="M930 280 c35 25 70 -25 115 85"/>
+    <path d="M1045 365 c60 -10 90 25 130 75"/>
+  </g>
+  <g stroke="#2a84ff" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M902 250 c18 -28 42 -28 56 0"/>
+    <path d="M1005 330 c32 -40 72 -40 100 0"/>
+    <path d="M1155 260 c20 -22 44 -22 66 0"/>
+  </g>
+  <text x="750" y="590" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="42" fill="#2b2b2d">Curiosity-driven chemical exploration</text>
+  <text x="750" y="645" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="22" fill="#2a84ff">Science Advances</text>
+</svg>

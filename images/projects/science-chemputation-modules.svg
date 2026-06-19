@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 750" role="img" aria-labelledby="title desc">
+  <title id="title">Robotic chemputation modules concept</title>
+  <desc id="desc">A concept graphic showing standardized robotic chemistry modules connected as a programmable workflow.</desc>
+  <rect width="1500" height="750" fill="#f5f7f8"/>
+  <rect x="100" y="100" width="1300" height="550" rx="8" fill="#fff"/>
+  <g fill="#2b2b2d">
+    <rect x="210" y="250" width="180" height="150" rx="8"/>
+    <rect x="500" y="250" width="180" height="150" rx="8"/>
+    <rect x="790" y="250" width="180" height="150" rx="8"/>
+    <rect x="1080" y="250" width="180" height="150" rx="8"/>
+  </g>
+  <g fill="#fff" font-family="Manrope, Arial, sans-serif" font-size="22" text-anchor="middle">
+    <text x="300" y="318">Dose</text>
+    <text x="300" y="350">Module</text>
+    <text x="590" y="318">React</text>
+    <text x="590" y="350">Module</text>
+    <text x="880" y="318">Analyse</text>
+    <text x="880" y="350">Module</text>
+    <text x="1170" y="318">Decide</text>
+    <text x="1170" y="350">Module</text>
+  </g>
+  <g stroke="#2a84ff" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M410 325 h70"/>
+    <path d="M455 295 l30 30 l-30 30"/>
+    <path d="M700 325 h70"/>
+    <path d="M745 295 l30 30 l-30 30"/>
+    <path d="M990 325 h70"/>
+    <path d="M1035 295 l30 30 l-30 30"/>
+    <path d="M1170 420 C970 540, 520 540, 300 420"/>
+    <path d="M323 460 l-38 -30 l45 -18"/>
+  </g>
+  <text x="750" y="590" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="42" fill="#2b2b2d">Programmable chemistry modules</text>
+  <text x="750" y="645" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="22" fill="#2a84ff">ACS Central Science</text>
+</svg>
