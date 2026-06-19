@@ -10,7 +10,7 @@ function renderHeader(activePage, basePath) {
     .join('\n                ');
 
   return '<header>'
-    + '<a class="brand" href="' + basePath + 'index.html"><img class="logo" src="' + basePath + 'images/ChemoBot-logo.svg" alt="ChemoBotAI logo" /></a>'
+    + '<a class="brand" href="' + basePath + 'index.html"><img class="logo" src="' + basePath + 'images/logos/chemobot-ai-logo.svg" alt="ChemoBotAI logo" /></a>'
     + '<nav class="main-nav">'
     + navHTML
     + '<a class="contact" href="mailto:chemobotai@gmail.com">Contact</a>'

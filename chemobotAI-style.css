@@ -45,7 +45,7 @@ a {
 .btn,
 button {
     border: none;
-    background: url('images/right-arrow.svg') right 16px center no-repeat #2b2b2d;
+    background: url('images/icons/right-arrow.svg') right 16px center no-repeat #2b2b2d;
     background-size: 25px 12px;
     color: #fff;
     padding: 12px 52px 12px 22px;
@@ -67,7 +67,7 @@ button:hover{background-color: #555;}
 
 
 
-.blue-pattern{background:url('images/bg-pattern.jpg') #2a84ff right;}
+.blue-pattern{background:url('images/backgrounds/blue-pattern.jpg') #2a84ff right;}
 .white{background: #fff;}
 .grey{background: #e6e7e8;}
 .blue{background: #2a84ff;}
@@ -320,6 +320,10 @@ header {
     background: #e6e7e8;
 }
 
+.testimonial-hidden {
+    display: none !important;
+}
+
 .wrapper-testimonial {
     width: 80%;
     margin: 0 auto;
@@ -396,6 +400,19 @@ header {
     letter-spacing: 0.05em;
     font-size: 13px;
     margin-top: 4px;
+}
+
+.testimonial-more {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#showMoreTestimonials {
+    background-image: none;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 /* ----------------------------------------*/
