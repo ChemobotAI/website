@@ -105,31 +105,33 @@ a.contact {
 
 /* ----------------------------------------*/
 
-.stage-track{
-    margin:26px 0 28px;
-    display:grid;
-    grid-template-columns:repeat(3,minmax(0,1fr));
-    grid-template-rows:auto auto auto auto;
-    column-gap:22px;
-    row-gap:0;}
+/* How we work: vertical flow with a central spine.
+   mode (left) | spine (centre) | example engagement (right) */
 
-/* subgrid keeps marker, name, description and card rows aligned across
-   all three columns regardless of how long each description runs */
-.stage{
+.flow-intro{
+    max-width:660px;
+    margin:0 auto 54px;
+    text-align:center;
+    color:#555;}
+
+.flow-stage{
     list-style:none;
-    position:relative;
     display:grid;
-    grid-row:span 4;
-    grid-template-rows:subgrid;}
+    grid-template-columns:1fr 96px 1fr;
+    grid-template-areas:"mode spine example";
+    padding-bottom:64px;}
 
-.stage-marker{
-    position:relative;
-    height:44px;
-    display:flex;
-    align-items:center;
-    margin-bottom:16px;}
+.flow-stage:last-child{padding-bottom:0;}
 
-.stage-number{
+.flow-mode{
+    grid-area:mode;
+    padding-right:44px;
+    text-align:right;}
+
+.flow-spine{grid-area:spine;position:relative;}
+.flow-example{grid-area:example;padding-left:44px;}
+
+.flow-node{
     position:relative;
     z-index:1;
     width:44px;
@@ -140,23 +142,38 @@ a.contact {
     display:flex;
     align-items:center;
     justify-content:center;
+    margin:0 auto;
     font-size:15px;
     letter-spacing:0.05em;}
 
-/* connector runs from each node across the grid gap to the next */
-.stage-marker::after{
+/* the line runs from each node down to the next one, so it never dangles */
+.flow-spine::before{
     content:"";
     position:absolute;
-    left:44px;
-    right:-22px;
-    top:50%;
-    height:2px;
+    left:50%;
+    margin-left:-1px;
+    top:44px;
+    bottom:-64px;
+    width:2px;
     background:#d0d2d3;}
 
-.stage:last-child .stage-marker::after{display:none;}
+.flow-stage:last-child .flow-spine::before{display:none;}
 
-.stage-name{font-size:24px;color:#2a84ff;margin-bottom:14px;}
-.stage-desc{margin-bottom:24px;}
+.flow-name{font-size:24px;color:#2a84ff;margin-bottom:12px;}
+
+.flow-value{
+    font-size:22px;
+    line-height:1.35;
+    margin-bottom:16px;}
+
+.flow-desc{margin-bottom:0;color:#555;}
+
+.flow-example-label{
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    font-size:13px;
+    color:#666;
+    margin-bottom:14px;}
 
 /* ----------------------------------------*/
 
@@ -167,6 +184,18 @@ a.contact {
 .intro a{color: inherit;border-bottom:2px solid #2b2b2d;}
 .intro {text-align: center;}
 .intro button{margin-top: 30px;}
+
+/* scoped to .intro so it outweighs the .intro p font-size, here and in
+   the mobile override */
+.intro .intro-support{
+    font-size:18px;
+    line-height:1.6;
+    color:#555;
+    margin-top:30px;
+    margin-bottom:0;}
+
+/* the 2px underline is too heavy at this size */
+.intro .intro-support a{border-bottom-width:1px;}
 
 /* ----------------------------------------*/
 

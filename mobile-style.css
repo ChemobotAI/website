@@ -14,8 +14,10 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .stage-track {column-gap:16px;}
-    .stage-marker::after {right:-16px;}
+    .flow-stage {grid-template-columns:1fr 72px 1fr;}
+    .flow-mode {padding-right:26px;}
+    .flow-example {padding-left:26px;}
+    .flow-value {font-size:20px;}
 }
 /* ----------------------------------------*/
 
@@ -65,10 +67,20 @@
         padding: 20px;
     }
 
-    /* stacked: cross-column alignment is meaningless, so drop the subgrid */
-    .stage-track {grid-template-columns: 1fr; row-gap:34px;}
-    .stage {display:block; grid-row:auto;}
-    .stage-marker::after {display:none;}
+    /* spine moves to the left edge and spans both rows, so the line keeps
+       running through the section instead of collapsing */
+    .flow-stage {
+        grid-template-columns:44px 1fr;
+        grid-template-areas:
+            "spine mode"
+            "spine example";
+        column-gap:20px;
+        padding-bottom:44px;}
+
+    .flow-mode {padding-right:0; text-align:left; margin-bottom:26px;}
+    .flow-example {padding-left:0;}
+    .flow-spine::before {bottom:-44px;}
+    .flow-intro {text-align:left; margin-bottom:40px;}
 
 }
 
