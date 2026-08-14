@@ -101,6 +101,65 @@ a.contact {
 
 /* ----------------------------------------*/
 
+.hero-sub{display:block;margin-top:18px;line-height:1.5;}
+
+/* ----------------------------------------*/
+
+.stage-track{
+    margin:26px 0 28px;
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    grid-template-rows:auto auto auto auto;
+    column-gap:22px;
+    row-gap:0;}
+
+/* subgrid keeps marker, name, description and card rows aligned across
+   all three columns regardless of how long each description runs */
+.stage{
+    list-style:none;
+    position:relative;
+    display:grid;
+    grid-row:span 4;
+    grid-template-rows:subgrid;}
+
+.stage-marker{
+    position:relative;
+    height:44px;
+    display:flex;
+    align-items:center;
+    margin-bottom:16px;}
+
+.stage-number{
+    position:relative;
+    z-index:1;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#2a84ff;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    letter-spacing:0.05em;}
+
+/* connector runs from each node across the grid gap to the next */
+.stage-marker::after{
+    content:"";
+    position:absolute;
+    left:44px;
+    right:-22px;
+    top:50%;
+    height:2px;
+    background:#d0d2d3;}
+
+.stage:last-child .stage-marker::after{display:none;}
+
+.stage-name{font-size:24px;color:#2a84ff;margin-bottom:14px;}
+.stage-desc{margin-bottom:24px;}
+
+/* ----------------------------------------*/
+
 .intro{margin-top: 50px;}
 .intro p{text-align: left; 
     font-size: 2.2rem;
