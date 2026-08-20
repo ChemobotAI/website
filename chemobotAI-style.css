@@ -434,6 +434,25 @@ a.contact {
     max-width: 780px;
 }
 
+/* Cal triggers open a modal in place rather than navigating, so the forward
+   arrow would be misleading. Dropping it also frees the 52px right padding
+   that only existed to make room for it. */
+.btn[data-cal-link]{
+    background-image:none;
+    padding-right:22px;}
+
+/* wraps to stacked buttons on narrow screens; .btn carries margin:4px 2px,
+   which is reset here so the gap is the only spacing */
+.btn-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:40px;}
+
+.btn-row .btn{margin:0;}
+
 .project-browse-btn,
 .btn-centered {
     display: table;
@@ -666,17 +685,6 @@ header {
    text above it rather than sitting 2px proud */
 .contact-book{margin:22px 0 0 0;}
 
-/* ----------------------------------------*/
-
-.cta{text-align:center;}
-
-.cta-text{
-    max-width:640px;
-    margin:0 auto 24px;
-    font-size:22px;
-    line-height:1.45;}
-
-.cta-btn{margin:0;}
 
 .footer {padding-bottom:80px;}
 .footer h3{text-align: left;color:#2a84ff;margin-bottom: 20px;}

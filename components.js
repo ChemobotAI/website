@@ -22,17 +22,6 @@ function renderHeader(activePage, basePath) {
     + '</header>';
 }
 
-// bgClass is passed per page so the band never sits next to a section of the
-// same colour: white on the homepage, grey where it precedes the black footer
-function renderCta(text, bgClass) {
-  return '<section class="' + (bgClass || 'grey') + '">'
-    + '<div class="wrapper cta">'
-    + '<p class="cta-text">' + text + '</p>'
-    + '<a class="btn cta-btn" href="https://cal.com/jgrizou/chemobotai" target="_blank" rel="noopener">Book a 15 min call</a>'
-    + '</div>'
-    + '</section>';
-}
-
 function renderFooter() {
   return '<section class="black" id="contact">'
     + '<div class="wrapper footer">'
@@ -56,11 +45,38 @@ function renderFooter() {
     + '</p>'
     // btn-light, not btn: the default dark button is invisible on the black
     // footer. This is the nav Contact destination, so it must offer booking.
-    + '<a class="btn btn-light contact-book" href="https://cal.com/jgrizou/chemobotai" target="_blank" rel="noopener">Book a 15 min call</a>'
+    + '<a class="btn btn-light contact-book" href="https://cal.com/jgrizou/chemobotai" target="_blank" rel="noopener"'
+    + ' data-cal-link="jgrizou/chemobotai" data-cal-namespace="chemobotai"'
+    + ' data-cal-config=\'{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}\'>Book a 15 min call</a>'
     + '<p class="copyright"> \u00A9 CHEMOBOTAI 2026</p>'
     + '<button id="backToTop" title="Back to Top">\u2191</button>'
     + '</div>'
     + '</section>';
+}
+
+// Cal.com element-click embed: any element carrying data-cal-link opens the
+// booking modal in place instead of navigating away. Call this after the
+// header, CTA and footer are rendered so the triggers already exist.
+// The href on those buttons stays as a fallback for when this is blocked.
+function initCalEmbed() {
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  Cal("init", "chemobotai", { origin: "https://app.cal.com" });
+  Cal.config = Cal.config || {};
+  Cal.config.forwardQueryParams = true;
+  Cal.ns.chemobotai("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
+
+  // Cal opens the modal but does not preventDefault, so the anchor would also
+  // follow its href and open a second tab. Suppress that here, but only once
+  // the embed is actually live, so a blocked script still falls through to the
+  // href instead of leaving a dead button.
+  if (initCalEmbed.bound) return;
+  initCalEmbed.bound = true;
+  document.addEventListener('click', function (e) {
+    var trigger = e.target && e.target.closest && e.target.closest('[data-cal-link]');
+    if (!trigger) return;
+    if (window.Cal && window.Cal.ns && window.Cal.ns.chemobotai) e.preventDefault();
+  });
 }
 
 function initCopyEmail() {

@@ -82,7 +82,7 @@
     <section class="grey">
      <div class="wrapper">
          <h3 class="section-heading section-heading-accent">How We Work</h3>
-         <p class="flow-intro">We work with your team at three stages. Each stage below carries one example engagement, chosen to show how we operate at that point.</p>
+         <p class="flow-intro">We work with your team at three stages: Pre-Lab, In-Lab, and In-House. Each stage below carries one example engagement, chosen to show how we operate at that point.</p>
 
          <ol class="flow">
             <li class="flow-stage">
@@ -167,7 +167,9 @@
             </li>
          </ol>
 
-         <a class="btn project-browse-btn" href="projects.html">Browse all projects</a>
+         <div class="btn-row">
+            <a class="btn" href="https://cal.com/jgrizou/chemobotai" target="_blank" rel="noopener" data-cal-link="jgrizou/chemobotai" data-cal-namespace="chemobotai" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book a 15 min call</a>
+         </div>
 
      </div> <!-- end wrapper -->
     </section> <!--end section-->
@@ -176,9 +178,6 @@
 <!------------------------------------------------------------
 ------------------------------------------------------------->
 
-
-
-<div id="site-cta"></div>
 
  <section class="blue">
      <div class="wrapper">
@@ -230,7 +229,7 @@
 
                         <ul class="credential">
                             <li><span class="highlight">//</span> Led a team of 10 PhDs and engineers at the intersection of chemistry, ML, and robotics at the Cronin Group</li>
-                            <li><span class="highlight">//</span> Best MSc and PhD thesis awards. Former tenured Assistant Professor</li>
+                            <li><span class="highlight">//</span> Best MSc and PhD thesis awards. Former permanent academic post, University of Glasgow</li>
                             <li><span class="highlight">//</span> 40+ papers in Nature Communications, PNAS, Angewandte Chemie, Science Advances, NeurIPS, AAAI, ...</li>
                             <li><span class="highlight">//</span> Co-founder experience at two start-ups. Worked with 20+ international institutions</li>
                         </ul><!--end credential--> 
@@ -292,10 +291,10 @@
 <script src="components.js"></script>
 <script>
   document.getElementById('site-header').innerHTML = renderHeader('home', '');
-    document.getElementById('site-cta').innerHTML = renderCta('Not sure which stage you are at? That is usually the first thing we work out together.', 'white');
   document.getElementById('site-footer').innerHTML = renderFooter();
   initCopyEmail();
   initBackToTop();
+  initCalEmbed();
 </script>
 
     </body> 
