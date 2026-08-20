@@ -34,8 +34,8 @@
 
 
 <section class="grey section-segment">  
-	     <div class="wrapper">
-         <h3>Client Projects</h3>
+    <div class="wrapper">
+         <h3 class="section-heading">Client Projects</h3>
 	         <div class="project-preview-grid">
             <article class="project-preview">
                 <a class="project-preview-link" href="projects/entalpic.html">
@@ -68,109 +68,383 @@
             <article class="project-preview">
                 <a class="project-preview-link" href="projects/chemify.html">
                     <div class="project-preview-image">
-                        <img src="images/projects/chemify.png" alt="Chemify logo"/>
+                        <img src="images/projects/chemify.jpg" alt="Chemify logo"/>
                     </div>
                     <div class="project-preview-body">
                         <h2>Chemify</h2>
-                        <p>Daniel built and led Chemify's engineering function, a team of five across electrical, mechanical, chemistry and software. He stood up the engineering suite that reached four prototypes of the same assembly per day.</p>
+                        <p>Daniel built and led Chemify's engineering function, a team of five across electrical, mechanical, chemistry and software. He created the engineering suite (laser cutter, 3D printer and more) so the team could iterate at speed, building up to four prototypes of the same assembly per day.</p>
                         <span class="btn project-view-btn">View project</span>
                     </div>
                     <div class="project-preview-detail"><span class="highlight">//</span> Chemify raised a $50M Series B</div>
                 </a>
             </article>
-	         </div>
+        </div>
+    </div> <!-- end wrapper -->
+</section> <!--end section-->
+
+<section class="white section-segment">  
+    <div class="wrapper">
 
          <div class="project-section-spacer"></div>
 
-         <h3>Scientific Work</h3>
-         <div class="project-preview-grid">
-            <article class="project-preview">
-                <a class="project-preview-link" href="projects/science-nanomaterials-evolution.html">
-                    <div class="project-preview-image">
-                        <img src="images/projects/science-nanomaterials-evolution.svg" alt="Autonomous nanomaterials evolution robot visual"/>
-                    </div>
-                    <div class="project-preview-body">
-                        <h2>Autonomous Nanomaterials Evolution Robot</h2>
-                        <p>A robotic platform evolved gold nanoparticles through algorithmic search, spectroscopic feedback, and physical seeding across generations.</p>
-                        <span class="btn project-view-btn">View project</span>
-                    </div>
-                    <div class="project-preview-detail"><span class="highlight">//</span> Nature Communications; includes link to related Science Advances platform</div>
-                </a>
-            </article>
+         <h3 class="section-heading">Scientific Publications</h3>
+         <p class="pub-intro">Selected papers we co-authored across chemistry, lab automation, AI and robotics.</p>
 
-            <article class="project-preview">
-                <a class="project-preview-link" href="projects/science-curious-protocells.html">
-                    <div class="project-preview-image">
-                        <img src="images/projects/science-curious-protocells.svg" alt="Curiosity-driven protocell discovery visual"/>
+         <ol class="pub-list">
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">A nanomaterials discovery robot for the Darwinian evolution of shape programmable gold nanoparticles</span>
+                        <span class="pub-meta"><span class="pub-venue">Nature Communications</span><span class="pub-year">2020</span><span class="pub-authors"><span class="pub-us">D Salley</span>, G Keenan, <span class="pub-us">J Grizou</span>, A Sharma, S Martín, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">A robot evolved gold nanoparticles across generations, passing the best results of one round back in as the physical seeds of the next.</p>
+                        <p>The platform prepared and analysed its own reactions using in-line UV-Vis spectroscopy, while a genetic algorithm chose the next set of conditions. It did not only pass digital parameters between generations: it reused the nanoparticles themselves as seeds, so synthetic history shaped later discovery. The system learned conditions for spheres, then rods, then used the optimised rods to reach more complex octahedral particles.</p>
+                        <a class="pub-link" href="https://doi.org/10.1038/s41467-020-16501-4" target="_blank" rel="noopener">Read the paper</a>
                     </div>
-                    <div class="project-preview-body">
-                        <h2>Curiosity-Driven Protocell Discovery</h2>
-                        <p>A target-free curiosity algorithm guided a chemical robot to explore self-propelling droplets and uncover unexpected behaviours.</p>
-                        <span class="btn project-view-btn">View project</span>
-                    </div>
-                    <div class="project-preview-detail"><span class="highlight">//</span> Science Advances; AI-driven exploration beyond fixed objectives</div>
-                </a>
-            </article>
+                </details>
+            </li>
 
-            <article class="project-preview">
-                <a class="project-preview-link" href="projects/science-networked-chemical-robots.html">
-                    <div class="project-preview-image">
-                        <img src="images/projects/science-networked-robots.svg" alt="Networked chemical robots visual"/>
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Networking chemical robots for reaction multitasking</span>
+                        <span class="pub-meta"><span class="pub-venue">Nature Communications</span><span class="pub-year">2018</span><span class="pub-authors">D Caramelli, <span class="pub-us">D Salley</span>, A Henson, G A Camarasa, S Sharabi, G Keenan, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">Low-cost chemistry robots were networked so they could share experimental choices and results in real time.</p>
+                        <p>Instead of treating a robot as an isolated machine, the work connected several so they could explore reaction spaces together. The networked set synchronised oscillating reactions, encoded information chemically, and assessed how reproducible crystallisations were. The lesson carries directly into modern automated labs: hardware, software, data and coordination need designing together.</p>
+                        <a class="pub-link" href="https://doi.org/10.1038/s41467-018-05828-8" target="_blank" rel="noopener">Read the paper</a>
                     </div>
-                    <div class="project-preview-body">
-                        <h2>Networked Chemical Robots</h2>
-                        <p>Low-cost chemistry robots coordinated experiments over a network, sharing results in real time to reduce duplicated search.</p>
-                        <span class="btn project-view-btn">View project</span>
-                    </div>
-                    <div class="project-preview-detail"><span class="highlight">//</span> Nature Communications; distributed lab automation</div>
-                </a>
-            </article>
+                </details>
+            </li>
 
-            <article class="project-preview">
-                <a class="project-preview-link" href="projects/science-human-robot-discovery.html">
-                    <div class="project-preview-image">
-                        <img src="images/projects/science-human-robot-discovery.svg" alt="Human-versus-robot chemical discovery visual"/>
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Adaptive artificial evolution of droplet protocells in a 3D-printed fluidic chemorobotic platform with configurable environments</span>
+                        <span class="pub-meta"><span class="pub-venue">Nature Communications</span><span class="pub-year">2017</span><span class="pub-authors">J M Parrilla-Gutierrez, S Tsuda, <span class="pub-us">J Grizou</span>, J Taylor, A Henson, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">A 3D-printed robotic platform evolved droplet protocells while changing the environment they lived in.</p>
+                        <p>The system generated and selected droplets in real time, with the surrounding environment treated as an experimental variable rather than a fixed background. Making the platform by rapid prototyping is what allowed the environment to be reconfigured between runs. The work showed the environment acting as an active selector on which droplets adapt.</p>
+                        <a class="pub-link" href="https://doi.org/10.1038/s41467-017-01161-8" target="_blank" rel="noopener">Read the paper</a>
                     </div>
-                    <div class="project-preview-body">
-                        <h2>Human-Versus-Robot Chemical Discovery</h2>
-                        <p>Active-learning workflows compared human and robotic strategies for discovering and crystallizing gigantic inorganic clusters.</p>
-                        <span class="btn project-view-btn">View project</span>
-                    </div>
-                    <div class="project-preview-detail"><span class="highlight">//</span> Angewandte Chemie; human-in-the-loop discovery</div>
-                </a>
-            </article>
+                </details>
+            </li>
 
-            <article class="project-preview">
-                <a class="project-preview-link" href="projects/science-inorganic-cluster-robot.html">
-                    <div class="project-preview-image">
-                        <img src="images/projects/science-inorganic-cluster-robot.svg" alt="Inorganic cluster discovery robot visual"/>
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">An artificial intelligence enabled chemical synthesis robot for exploration and optimization of nanomaterials</span>
+                        <span class="pub-meta"><span class="pub-venue">Science Advances</span><span class="pub-year">2022</span><span class="pub-authors">Y Jiang, <span class="pub-us">D Salley</span>, A Sharma, G Keenan, M Mullin, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">A synthesis robot combined automated experiments with machine learning to explore and optimise nanomaterials.</p>
+                        <p>The platform ran the full cycle end to end: preparing samples, measuring them, and using the results to choose what to try next. It is the larger sibling of the nanomaterials evolution work, built to search a wider space of conditions.</p>
+                        <a class="pub-link" href="https://doi.org/10.1126/sciadv.abo2626" target="_blank" rel="noopener">Read the paper</a>
                     </div>
-                    <div class="project-preview-body">
-                        <h2>Inorganic Cluster Discovery Robot</h2>
-                        <p>Modular robotic hardware and software searched large inorganic reaction spaces to discover polyoxometalate clusters.</p>
-                        <span class="btn project-view-btn">View project</span>
-                    </div>
-                    <div class="project-preview-detail"><span class="highlight">//</span> ACS Central Science; Daniel first-author modular platform</div>
-                </a>
-            </article>
+                </details>
+            </li>
 
-            <article class="project-preview">
-                <a class="project-preview-link" href="projects/science-robotic-chemputation-modules.html">
-                    <div class="project-preview-image">
-                        <img src="images/projects/science-chemputation-modules.svg" alt="Robotic chemputation modules visual"/>
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">A curious formulation robot enables the discovery of a novel protocell behavior</span>
+                        <span class="pub-meta"><span class="pub-venue">Science Advances</span><span class="pub-year">2020</span><span class="pub-authors"><span class="pub-us">J Grizou</span>, L J Points, A Sharma, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">Instead of optimising toward a target, a curiosity algorithm drove the robot to look for whatever was new.</p>
+                        <p>This asked a different question from standard optimisation: what happens when a chemistry robot is not told what to maximise? A curiosity algorithm controlled a formulation platform exploring self-propelling oil-in-water droplets, selecting experiments likely to reveal new behaviour. Against random exploration on the same budget, it observed far more diverse droplet dynamics and surfaced a specific sensitivity to temperature.</p>
+                        <a class="pub-link" href="https://doi.org/10.1126/sciadv.aay4237" target="_blank" rel="noopener">Read the paper</a>
                     </div>
-                    <div class="project-preview-body">
-                        <h2>Robotic Chemputation Modules</h2>
-                        <p>Standard robotic modules for programmable chemistry, designed as practical building blocks for digital labs.</p>
-                        <span class="btn project-view-btn">View project</span>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Artificial intelligence exploration of unstable protocells leads to predictable properties and discovery of collective behavior</span>
+                        <span class="pub-meta"><span class="pub-venue">PNAS</span><span class="pub-year">2018</span><span class="pub-authors">L J Points, J W Taylor, <span class="pub-us">J Grizou</span>, K Donkers, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">An automated platform explored unstable droplet systems and built models linking their physical properties to how they behave.</p>
+                        <p>The system selected and ran its own experiments, recording what happened through image recognition. From that data it built predictive models tying properties such as viscosity, surface tension and density to observed behaviours, including collective swarming. It turned a system usually treated as too unpredictable to study into one with describable rules.</p>
+                        <a class="pub-link" href="https://doi.org/10.1073/pnas.1711089115" target="_blank" rel="noopener">Read the paper</a>
                     </div>
-                    <div class="project-preview-detail"><span class="highlight">//</span> ACS Central Science; chemistry digitization</div>
-                </a>
-            </article>
-         </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Self-calibrating BCIs: Ranking and recovery of mental targets without labels</span>
+                        <span class="pub-meta"><span class="pub-venue">NeurIPS</span><span class="pub-year">2026</span><span class="pub-authors"><span class="pub-us">J Grizou</span>, C De la Torre-Ortiz, T Ruotsalo</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">A brain-computer interface that works out what the user is thinking of without ever being told the right answer.</p>
+                        <p>Conventional interfaces need a labelled calibration session before they can be used. This work recovers and ranks the user's mental target from unlabelled signals alone, removing that setup step. It is the same self-calibration idea Jonathan has developed across interfaces, applied here at a top machine learning venue.</p>
+                        <a class="pub-link" href="https://doi.org/10.52202/085713-3550" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Interdisciplinary research in artificial intelligence: challenges and opportunities</span>
+                        <span class="pub-meta"><span class="pub-venue">Frontiers in Big Data</span><span class="pub-year">2020</span><span class="pub-authors">R Kusters, D Misevic, H Berry, A Cully, Y Le Cunff, L Dandoy, N Díaz-Rodríguez, M Ficher, <span class="pub-us">J Grizou</span> et al.</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">What actually helps, and what gets in the way, when AI research crosses disciplines.</p>
+                        <p>Written from the experience of researchers working between AI and other fields, including chemistry and biology. The obstacles it describes, around shared vocabulary, incentives and tooling, are the same ones that show up when bringing automation into a working lab.</p>
+                        <a class="pub-link" href="https://doi.org/10.3389/fdata.2020.577974" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Algorithm-driven robotic discovery of polyoxometalate-scaffolding metal-organic frameworks</span>
+                        <span class="pub-meta"><span class="pub-venue">JACS</span><span class="pub-year">2024</span><span class="pub-authors">D He, Y Jiang, M Guillén-Soler, Z Geary, L Vizcaíno-Anaya, <span class="pub-us">D Salley</span> et al.</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">An algorithm steered a robot through the search for new metal-organic frameworks built on polyoxometalate scaffolds.</p>
+                        <p>Framework discovery depends on getting assembly and crystallisation right at the same time, which makes brute-force search expensive. Letting the search algorithm choose the next experiment focused effort on the productive regions of that space.</p>
+                        <a class="pub-link" href="https://doi.org/10.1021/jacs.4c09553" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Robotic stepwise synthesis of hetero-multinuclear metal oxo clusters as single-molecule magnets</span>
+                        <span class="pub-meta"><span class="pub-venue">JACS</span><span class="pub-year">2021</span><span class="pub-authors">T Minato, <span class="pub-us">D Salley</span>, N Mizuno, K Yamaguchi, L Cronin, K Suzuki</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">A robot built metal oxo clusters one deliberate step at a time, producing single-molecule magnets.</p>
+                        <p>Stepwise construction gives control over exactly which metals end up where in the cluster, which is what determines the magnetic behaviour. Automating the sequence makes that control repeatable rather than dependent on a particular chemist's hands.</p>
+                        <a class="pub-link" href="https://doi.org/10.1021/jacs.1c06047" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Human versus robots in the discovery and crystallization of gigantic polyoxometalates</span>
+                        <span class="pub-meta"><span class="pub-venue">Angewandte Chemie</span><span class="pub-year">2017</span><span class="pub-authors">V Duros, <span class="pub-us">J Grizou</span>, W Xuan, Z Hosni, D-L Long, H N Miras, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">A head-to-head comparison of human-guided and robot-guided strategies for finding and crystallising giant inorganic clusters.</p>
+                        <p>This explored how active machine learning can support discovery in a space where molecular self-assembly and crystallisation have to succeed together. Comparing the two strategies showed how structured experimental workflows expose the productive regions of a difficult chemical landscape.</p>
+                        <a class="pub-link" href="https://doi.org/10.1002/anie.201705721" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">TELESIM: A modular and plug-and-play framework for robotic arm teleoperation using a digital twin</span>
+                        <span class="pub-meta"><span class="pub-venue">ICRA</span><span class="pub-year">2024</span><span class="pub-authors">F P Audonnet, <span class="pub-us">J Grizou</span>, A Hamilton, G Aragon-Camarasa</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">A modular framework for driving a real robot arm through a digital twin of it.</p>
+                        <p>The operator works against a simulated copy of the arm, and the framework maps that onto the physical hardware. Being plug-and-play means it is not tied to one specific robot, which matters when a lab's hardware changes.</p>
+                        <a class="pub-link" href="https://doi.org/10.1109/icra57147.2024.10610935" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Calibration-free BCI based control</span>
+                        <span class="pub-meta"><span class="pub-venue">AAAI</span><span class="pub-year">2014</span><span class="pub-authors"><span class="pub-us">J Grizou</span>, I Iturrate, L Montesano, P-Y Oudeyer, M Lopes</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">Controlling a machine from brain signals with no calibration session first.</p>
+                        <p>Brain-computer interfaces normally need a training phase where the user produces known signals so the system can learn to read them. This work removed that step, letting the system infer the meaning of signals while being used. It is the foundation of the self-calibration line of work.</p>
+                        <a class="pub-link" href="https://hal.science/hal-00984068" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Interactive learning from unlabeled instructions</span>
+                        <span class="pub-meta"><span class="pub-venue">UAI</span><span class="pub-year">2014</span><span class="pub-authors"><span class="pub-us">J Grizou</span>, I Iturrate, L Montesano, P-Y Oudeyer, M Lopes</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">A robot learns both the task and how to interpret its teacher's signals, at the same time, with no dictionary given.</p>
+                        <p>Normally a robot is told in advance what a given human signal means. Here it works both out together, which is what allows a system to adapt to a new user without setup.</p>
+                        <a class="pub-link" href="https://hal.science/hal-01007689" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Robotic modules for the programmable chemputation of molecules and materials</span>
+                        <span class="pub-meta"><span class="pub-venue">ACS Central Science</span><span class="pub-year">2023</span><span class="pub-authors"><span class="pub-us">D Salley</span>, J S Manzano, P J Kitson, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">Standard robotic modules that make common chemical operations programmable across molecules, materials and formulations.</p>
+                        <p>Before a lab can benefit from AI it needs reliable digital interfaces to its experiments. This work is really an engineering philosophy: robust automation comes from modularity, repeatable interfaces and software-controlled workflows scientists will actually use. It bridges research prototypes and lab infrastructure that can scale past a single bespoke machine.</p>
+                        <a class="pub-link" href="https://doi.org/10.1021/acscentsci.3c00304" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">A modular programmable inorganic cluster discovery robot for the discovery and synthesis of polyoxometalates</span>
+                        <span class="pub-meta"><span class="pub-venue">ACS Central Science</span><span class="pub-year">2020</span><span class="pub-authors"><span class="pub-us">D S Salley</span>, G A Keenan, D-L Long, N L Bell, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">A modular robot platform built specifically for searching inorganic cluster chemistry.</p>
+                        <p>Cluster discovery depends on self-assembly and crystallisation happening under the right conditions, making brute-force search expensive and hard to reproduce. This platform combined high-throughput reaction execution with inline analysis. It shows that useful automation is not just about moving liquids: the platform has to match the scientific search problem.</p>
+                        <a class="pub-link" href="https://doi.org/10.1021/acscentsci.0c00415" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Intuition-enabled machine learning beats the competition when joint human-robot teams perform inorganic chemical experiments</span>
+                        <span class="pub-meta"><span class="pub-venue">J. Chem. Inf. Model.</span><span class="pub-year">2019</span><span class="pub-authors">V Duros, <span class="pub-us">J Grizou</span>, A Sharma, S H M Mehr, A Bubliauskas, P Frei et al.</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">Human intuition combined with machine learning outperformed either working alone.</p>
+                        <p>This followed the human-versus-robot comparison by testing the middle ground: joint teams where a chemist's intuition, machine learning and automated experimentation all feed the same search. The combination beat the alternatives, which is the practical argument for human-in-the-loop automation rather than full replacement.</p>
+                        <a class="pub-link" href="https://doi.org/10.1021/acs.jcim.9b00304" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Optimization of formulations using robotic experiments driven by machine learning DoE</span>
+                        <span class="pub-meta"><span class="pub-venue">Cell Reports Physical Science</span><span class="pub-year">2021</span><span class="pub-authors">L Cao, D Russo, K Felton, <span class="pub-us">D Salley</span>, A Sharma, G Keenan et al.</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">Machine-learning-guided design of experiments, executed by robots, to optimise formulations.</p>
+                        <p>Formulation work involves many interacting ingredients, so the number of possible combinations grows fast. Using machine learning to choose which experiments to run keeps the number needed manageable, and the robot executes them consistently.</p>
+                        <a class="pub-link" href="https://doi.org/10.1016/j.xcrp.2020.100295" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Automated digital discovery and synthesis of CuO-based nanoparticle heterostructures for catalysis</span>
+                        <span class="pub-meta"><span class="pub-venue">ACS Appl. Mater. Interfaces</span><span class="pub-year">2025</span><span class="pub-authors">D Hervitz, Y Jiang, <span class="pub-us">D Salley</span>, M McNulty, P J Kitson, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">Automated discovery and synthesis of copper-oxide nanoparticle heterostructures for use as catalysts.</p>
+                        <p>The platform searched combinations of synthesis conditions and made the resulting materials itself. Recording the process digitally is what makes a promising result reproducible later.</p>
+                        <a class="pub-link" href="https://doi.org/10.1021/acsami.5c13709" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">AI-driven robotic crystal explorer for rapid polymorph identification</span>
+                        <span class="pub-meta"><span class="pub-venue">Digital Discovery</span><span class="pub-year">2026</span><span class="pub-authors">E C Lee, <span class="pub-us">D Salley</span>, A Sharma, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">A robot that hunts for the different crystal forms a compound can take.</p>
+                        <p>The same molecule can crystallise into several polymorphs with different physical properties, which matters a great deal in pharmaceuticals. Automating the search covers more of the possible conditions than manual screening, and does it consistently.</p>
+                        <a class="pub-link" href="https://doi.org/10.1039/d5dd00203f" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Exploiting task constraints for self-calibrated brain-machine interface control using error-related potentials</span>
+                        <span class="pub-meta"><span class="pub-venue">PLOS ONE</span><span class="pub-year">2015</span><span class="pub-authors">I Iturrate, <span class="pub-us">J Grizou</span>, J Omedes, P-Y Oudeyer, M Lopes, L Montesano</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">Using what the task itself constrains to calibrate a brain-machine interface automatically.</p>
+                        <p>Error-related potentials are brain signals produced when someone sees a mistake. By combining those signals with the structure of the task, the system calibrates itself during normal use rather than in a separate setup session.</p>
+                        <a class="pub-link" href="https://doi.org/10.1371/journal.pone.0131491" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Learning legible motion from human-robot interactions</span>
+                        <span class="pub-meta"><span class="pub-venue">Int. J. of Social Robotics</span><span class="pub-year">2017</span><span class="pub-authors">B Busch, <span class="pub-us">J Grizou</span>, M Lopes, F Stulp</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">Teaching a robot to move in a way that makes its intention obvious to the person watching.</p>
+                        <p>A robot can reach a goal by many paths, and some make it much clearer what it is about to do. Learning that from real interactions makes collaboration safer and less ambiguous.</p>
+                        <a class="pub-link" href="https://hal.science/hal-01629451" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Facilitating intention prediction for humans by optimizing robot motions</span>
+                        <span class="pub-meta"><span class="pub-venue">IROS</span><span class="pub-year">2015</span><span class="pub-authors">F Stulp, <span class="pub-us">J Grizou</span>, B Busch, M Lopes</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">Optimising robot motion specifically so humans can predict what it will do next.</p>
+                        <p>Rather than optimising only for speed or efficiency, the motion is chosen to be readable. In a shared workspace, a person who can anticipate the robot works with it more comfortably.</p>
+                        <a class="pub-link" href="https://hal.science/hal-01170977" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">The evolution of active droplets in chemorobotic platforms</span>
+                        <span class="pub-meta"><span class="pub-venue">ECAL / Artificial Life</span><span class="pub-year">2017</span><span class="pub-authors">L J Points, <span class="pub-us">J Grizou</span>, J M Parrilla Gutierrez, J W Taylor, L Cronin</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">How droplet systems change over successive generations when a robot runs the selection.</p>
+                        <p>A summary of what the chemorobotic droplet work showed about evolution in a purely chemical system. It sits alongside the Nature Communications and PNAS protocell papers as the artificial-life framing of the same platform.</p>
+                        <a class="pub-link" href="https://doi.org/10.1162/isal_a_059" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+            <li class="pub">
+                <details class="pub-details">
+                    <summary>
+                        <span class="pub-title">Poppy: open source 3D printed robot for experiments in developmental robotics</span>
+                        <span class="pub-meta"><span class="pub-venue">ICDL-EpiRob</span><span class="pub-year">2014</span><span class="pub-authors">M Lapeyre, P Rouanet, <span class="pub-us">J Grizou</span>, S N&#x27;Guyen, A Le Falher, F Depraetre et al.</span></span>
+                    </summary>
+                    <div class="pub-body">
+                        <p class="pub-summary">An open-source, 3D-printed humanoid robot built so other labs could reproduce and modify it.</p>
+                        <p>Poppy was designed to be fabricated on accessible hardware and openly shared, so experiments could be repeated elsewhere. It is an early example of the same principle behind the custom lab platforms: design for other people to build and change, not just for one demo.</p>
+                        <a class="pub-link" href="https://hal.inria.fr/hal-01096338" target="_blank" rel="noopener">Read the paper</a>
+                    </div>
+                </details>
+            </li>
+
+         </ol>
 
 	    </div> <!-- end wrapper -->
-</section> <!--end section--> 
+</section> <!--end section-->
 
 
 <div id="site-footer"></div>
