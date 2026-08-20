@@ -1,6 +1,8 @@
 function renderHeader(activePage, basePath) {
   const navLinks = [
-    { id: 'home', label: 'Home', href: basePath + 'index.html' },
+    // './' from the root, '../' from projects/: both land on the site root
+    // without ever showing index.html in the address bar
+    { id: 'home', label: 'Home', href: basePath || './' },
     { id: 'projects', label: 'Projects', href: basePath + 'projects.html' },
     { id: 'testimonials', label: 'Testimonials', href: basePath + 'testimonials.html' },
   ];
@@ -10,7 +12,7 @@ function renderHeader(activePage, basePath) {
     .join('\n                ');
 
   return '<header>'
-    + '<a class="brand" href="' + basePath + 'index.html"><img class="logo" src="' + basePath + 'images/logos/chemobot-ai-logo.svg" alt="ChemoBotAI logo" /></a>'
+    + '<a class="brand" href="' + (basePath || './') + '"><img class="logo" src="' + basePath + 'images/logos/chemobot-ai-logo.svg" alt="ChemoBotAI logo" /></a>'
     + '<nav class="main-nav">'
     + navHTML
     + '<a class="contact" href="mailto:chemobotai@gmail.com">Contact</a>'
