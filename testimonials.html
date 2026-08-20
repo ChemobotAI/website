@@ -125,13 +125,16 @@
     </div>
 
 
-    <div id="site-footer"></div>
+    
+<div id="site-footer"></div>
 
 <script src="components.js"></script>
 <script>
   document.getElementById('site-header').innerHTML = renderHeader('testimonials', '');
   document.getElementById('site-footer').innerHTML = renderFooter();
+  initCopyEmail();
   initBackToTop();
+  initCalEmbed();
 
   var testimonialBatchSize = 3;
   var visibleTestimonials = testimonialBatchSize;
