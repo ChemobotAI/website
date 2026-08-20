@@ -177,6 +177,9 @@
 ------------------------------------------------------------->
 
 
+
+<div id="site-cta"></div>
+
  <section class="blue">
      <div class="wrapper">
 
@@ -289,7 +292,9 @@
 <script src="components.js"></script>
 <script>
   document.getElementById('site-header').innerHTML = renderHeader('home', '');
+    document.getElementById('site-cta').innerHTML = renderCta('Not sure which stage you are at? That is usually the first thing we work out together.', 'white');
   document.getElementById('site-footer').innerHTML = renderFooter();
+  initCopyEmail();
   initBackToTop();
 </script>
 
