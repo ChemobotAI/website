@@ -47,7 +47,8 @@ function renderFooter() {
     // footer. This is the nav Contact destination, so it must offer booking.
     + '<a class="btn btn-light contact-book" href="https://cal.com/jgrizou/chemobotai" target="_blank" rel="noopener"'
     + ' data-cal-link="jgrizou/chemobotai" data-cal-namespace="chemobotai"'
-    + ' data-cal-config=\'{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}\'>Book a 15 min call</a>'
+    + ' data-cal-config=\'{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}\'>Book a free 30 min call</a>'
+    + '<p class="book-note">No pitch. You will leave knowing where to start.</p>'
     + '<p class="copyright"> \u00A9 CHEMOBOTAI 2026</p>'
     + '<button id="backToTop" title="Back to Top">\u2191</button>'
     + '</div>'
