@@ -453,6 +453,18 @@ a.contact {
 
 .btn-row .btn{margin:0;}
 
+/* the reassurance under a booking button: what actually removes hesitation */
+.book-note{
+    max-width:430px;
+    margin:14px 0 0;
+    font-size:14px;
+    line-height:1.5;
+    color:#666;}
+
+/* centred under the homepage button, left-aligned in the footer */
+.btn-row + .book-note{margin-left:auto;margin-right:auto;text-align:center;}
+.footer .book-note{color:#a9a9ab;}
+
 .project-browse-btn,
 .btn-centered {
     display: table;
